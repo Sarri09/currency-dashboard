@@ -20,7 +20,7 @@ Follow these instructions to run the project locally:
 
 1.  **Clone the repository:**
     ```bash
-    git clone [URL]
+    git clone https://github.com/Sarri09/currency-dashboard.git
     cd currency-dashboard
     ```
 
