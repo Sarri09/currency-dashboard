@@ -6,7 +6,7 @@ import styles from './Converter.module.css';
 
 export default function CurrencyConverter() {
   const [currencies, setCurrencies] = useState<{[key: string]: string}>({});
-  const [amount, setAmount] = useState<number>(100);
+  const [amount, setAmount] = useState<number>(1);
   const [fromCurrency, setFromCurrency] = useState<string>('EUR');
   const [toCurrency, setToCurrency] = useState<string>('USD');
   
