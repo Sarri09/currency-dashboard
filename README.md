@@ -58,7 +58,7 @@ I utilized AI (Gemini) as a productivity tool to accelerate development, specifi
 * **Component Structure:** 
     To maximize efficiency, I used AI to  Generate the initial HTML/CSS structures for forms to allow more focus on business logic.
 * **Performance Optimization:**
-    Driven by the decision to implement a real-time conversion flow (as detailed in the *Assumptions and Trade-offs* section), I recognized a critical technical risk: a naive implementation would trigger an API request on every single keystroke. To prevent server flooding and respect API limits, I tasked the AI with implementing a **Debounce strategy**. This solution (using `setTimeout` inside `useEffect`) achieves the desired reactive behavior while ensuring strict network efficiency.
+    I identified that the real-time conversion flow would trigger excessive API requests on every keystroke. To prevent server flooding, I tasked the AI with implementing a **Debounce strategy** (using `setTimeout`), ensuring the application remains reactive while strictly respecting network limits.
 * **Documentation:**
     I leveraged AI to refine the drafting of this README. I acted as the content author, providing the specific outlines, raw ideas, and reasoning (especially regarding the trade-offs and innovation logic), and tasked the AI with polishing the language and formatting. This ensured the final documentation adhered to professional standards while accurately reflecting my own technical decisions.
 * **Quality Assurance Strategy:**
